@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-      <div className="App">
+      <div className="font-sans text-center mt-10">
         <h1>Client Application</h1>
         <p>Message from server: {message}</p>
       </div>
