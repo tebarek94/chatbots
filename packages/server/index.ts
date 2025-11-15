@@ -8,9 +8,6 @@ const PORT = process.env.PORT || 3000;
 app.get("/", (req: Request, res: Response) => {
   res.send("Hello from the server!");
 });
-app.get("/api-key", (req: Request, res: Response) => {
-  res.send({ apiKey: process.env.OPENAI_API_KEY || "No API Key Found" });
-});
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
